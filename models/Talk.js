@@ -1,4 +1,3 @@
-"use strict";
 let mongoose = require('mongoose');
 
 /* The schema describing the collection in mongo database */

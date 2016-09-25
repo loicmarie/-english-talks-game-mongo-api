@@ -1,4 +1,3 @@
-"use strict";
 let restify  = require('restify'),
     mongoose = require('mongoose');
 

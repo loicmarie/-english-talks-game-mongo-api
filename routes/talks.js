@@ -1,4 +1,3 @@
-"use strict";
 const Talk = require('../models/Talk');
 
 module.exports = server => {
