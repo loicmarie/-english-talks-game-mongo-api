@@ -4,11 +4,22 @@ let mongoose = require('mongoose');
 let schema = new mongoose.Schema({
     theme: String,
     themeTranslation : String,
-    keywords : [{
-      value : String,
-      suggestedSentence : String,
-      translation : String
-    }]
+    keywordsSet : [
+      {
+        firstPlayerKeywords : [{
+          keyword : String,
+          keywordTranslation : String,
+          suggestedSentence : String,
+          suggestedSentenceTranslation : String
+        }],
+        secondPlayerKeywords : [{
+          keyword : String,
+          keywordTranslation : String,
+          suggestedSentence : String,
+          suggestedSentenceTranslation : String
+        }]
+      }
+    ]
 });
 
 /* We export the model to use it in talk.js routes file */

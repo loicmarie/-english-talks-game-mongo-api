@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 /* The schema describing the collection in mongo database */
 let schema = new mongoose.Schema({
@@ -8,7 +9,7 @@ let schema = new mongoose.Schema({
     email : String,
     password : String,
     avatar : String,
-    emailVerified : { Boolean , default : false }
+    emailVerified : { type: Boolean , default: false}
 });
 
 /* We export the model to use it in users.js routes file */
